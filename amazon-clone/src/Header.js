@@ -14,7 +14,7 @@ function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
   var str = user?.email;
   str = str?.substring(0, str.indexOf("@"));
-  // var stri = `${str[0].toUpperCase()}${str?.slice(1)}`;
+
   return (
     <div className="header">
       <Link to="/">
